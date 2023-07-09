@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.six {
+  width: 100%;
+  min-height: 75vh;
+}
+.six .six-inner {
+  min-height: 75vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px 30px;
+}
+.six .six-inner .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.six .six-inner .left h2 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.six .six-inner .left h5 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.six .six-inner .right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.six .six-inner .right .innerLeft {
+  background-image: url("../../images/bb81c6ca818cb748b29401af69d10e79.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.six .six-inner .right .innerRight {
+  background-image: url("../../images/b8f0686a0243299f4cf7188805b8486b.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .six .six-inner {
+    grid-template-columns: 1fr;
+  }
+  .six .six-inner .right .innerLeft {
+    height: 300px;
+  }
+  .six .six-inner .right .innerRight {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .six .six-inner .left h2 {
+    font-size: 30px;
+  }
+  .six .six-inner .left h5 {
+    font-size: 15px;
+  }
+  .six .six-inner .right .innerLeft {
+    height: 200px;
+  }
+  .six .six-inner .right .innerRight {
+    height: 200px;
+  }
+}/*# sourceMappingURL=Six.css.map */

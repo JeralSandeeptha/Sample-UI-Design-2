@@ -1,0 +1,103 @@
+@import '../Common/common.scss';
+
+.seven{
+    width: 100%;
+    min-height: 75vh;
+    background-color: $blue;
+
+    .seven-inner{
+        max-width: 1200px;
+        min-height: 75vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 50px 30px;
+
+        .left{
+            background-image: url('../../images/d2a86e6592da30d41eecfb9ff1be32d2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            .box{
+                background-color: $white;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                
+                img{
+                    margin-bottom: 10px;
+                }
+
+                h5{
+                    color: $black;
+                    font-weight: bold;
+                    font-size: 20px;
+                    font-family: $montserrat;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .seven{
+    
+        .seven-inner{
+            grid-template-columns: 1fr;
+    
+            .left{
+                height: 400px;
+            }
+    
+            .right{
+    
+                .box{
+                    min-height: 300px;
+                    
+                    img{
+                    }
+    
+                    h5{
+                     
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .seven{
+    
+        .seven-inner{
+    
+            .left{
+
+            }
+    
+            .right{
+                grid-template-columns: 1fr;
+    
+                .box{
+                    min-height: 200px;
+                    
+                    img{
+                    }
+    
+                    h5{
+                     
+                    }
+                }
+            }
+        }
+    }
+}

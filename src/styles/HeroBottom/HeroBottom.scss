@@ -1,0 +1,108 @@
+@import '../Common/common.scss';
+
+.heroBottom{
+    background-color: $lightBlue;
+    width: 100%;
+    min-height: 75vh;
+
+    .heroBottom-inner{
+        margin: 0 auto;
+        max-width: 1200px;
+        min-height: 75vh;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+
+        .up{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 50px 30px 0 30px;
+
+            .left{
+                background-image: url('../../images/49855146b7a994ccaa748904063a8c66.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .right{
+                background-image: url('../../images/ca86e55b8d68227620a8508a3ee468cd.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .down{
+            padding: 60px 60px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+                text-align: center;
+                font-family: $montserrat;
+                font-size: 40px;
+                color: $black;
+                margin-bottom: 15px;
+            }
+
+            h5{
+                text-align: center;
+                font-family: $roboto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 25px;
+                max-width: 900px;
+                color: $black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroBottom{
+    
+        .heroBottom-inner{
+    
+            .up{
+                grid-template-columns: 1fr;
+            }
+    
+            .down{
+                padding: 50px 40px;
+    
+                h2{
+                    font-size: 30px;
+                }
+    
+                h5{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heroBottom{
+    
+        .heroBottom-inner{
+    
+            .up{
+
+            }
+    
+            .down{
+    
+                h2{
+                }
+    
+                h5{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

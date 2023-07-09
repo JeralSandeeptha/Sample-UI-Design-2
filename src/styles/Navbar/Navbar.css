@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.active {
+  color: #000 !important;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 80px;
+  background-color: #9BCDFC;
+}
+.navbar .navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-inner .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.navbar .navbar-inner .nav-links .close {
+  cursor: pointer;
+  display: none;
+}
+.navbar .navbar-inner .nav-links .link h5 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #333129;
+}
+.navbar .navbar-inner .nav-links .link h5:hover {
+  color: #a8aab2;
+}
+.navbar .navbar-inner .menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar .navbar-inner {
+    padding: 30px;
+  }
+  .navbar .navbar-inner .nav-links .link h5 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-inner .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    min-height: 100vh;
+    width: 75%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    transform: translateX(-100%);
+  }
+  .navbar .navbar-inner .nav-links .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #B3B3B3;
+  }
+  .navbar .navbar-inner .nav-links .link {
+    flex-direction: column;
+    top: 100px;
+  }
+  .navbar .navbar-inner .nav-links .link h5 {
+    font-size: 16px;
+    top: 100px;
+  }
+  .navbar .navbar-inner .nav-links .link h5:hover {
+    color: #B3B3B3;
+  }
+  .navbar .navbar-inner .menu {
+    display: block;
+    color: #a8aab2;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

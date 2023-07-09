@@ -1,0 +1,84 @@
+@import '../Common/common.scss';
+
+.four{
+    width: 100%;
+    min-height: 75vh;
+
+    .four-inner{
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 75vh;
+        padding: 50px 30px;
+
+        .up{
+            background-image: url('../../images/f5e409b121d7aed1ae63b1ed65b84dc8.jpeg');
+            min-height: 45vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 50px;
+        }
+
+        .down{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h2{
+                 font-size: 35px;
+                 font-family: $montserrat;
+                 color: $black;   
+                 margin-bottom: 20px;
+                 text-align: center;
+            }
+
+            h5{
+                font-size: 18px;
+                font-family: $roboto;
+                color: $black;   
+                font-weight: normal;
+                text-align: center;
+                max-width: 800px;
+                margin-bottom: 20px;
+            }
+
+            .link{
+                background-color: $blue;
+                font-family: $roboto;
+                color: $black;
+                padding: 20px 40px;
+
+                &:hover{
+                    background-color: $hoverBlue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .four{
+
+        .four-inner{
+    
+            .up{
+            }
+    
+            .down{
+    
+                h2{
+                   font-size: 30px;
+                }
+    
+                h5{
+                    font-size: 15px;
+                }
+    
+                .link{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

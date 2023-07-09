@@ -1,0 +1,43 @@
+@import '../Common/common.scss';
+
+.footer{
+    width: 100%;
+    background-color: $middlegray;
+    min-height: 23vh;
+    color: $white;
+    font-family: $roboto;
+
+    .footer-inner{
+        margin: 0 auto;
+        min-height: 23vh;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+
+        a{
+            cursor: pointer;
+            color: $white;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 0 30px;
+    
+        .footer-inner{
+            text-align: center;
+            font-size: 16px;
+
+            a{
+
+            }
+        }
+    }
+}
+

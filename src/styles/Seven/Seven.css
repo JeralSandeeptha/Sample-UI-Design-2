@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.seven {
+  width: 100%;
+  min-height: 75vh;
+  background-color: #9BCDFC;
+}
+.seven .seven-inner {
+  max-width: 1200px;
+  min-height: 75vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 50px 30px;
+}
+.seven .seven-inner .left {
+  background-image: url("../../images/d2a86e6592da30d41eecfb9ff1be32d2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.seven .seven-inner .right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.seven .seven-inner .right .box {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.seven .seven-inner .right .box img {
+  margin-bottom: 10px;
+}
+.seven .seven-inner .right .box h5 {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .seven .seven-inner {
+    grid-template-columns: 1fr;
+  }
+  .seven .seven-inner .left {
+    height: 400px;
+  }
+  .seven .seven-inner .right .box {
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .seven .seven-inner .right {
+    grid-template-columns: 1fr;
+  }
+  .seven .seven-inner .right .box {
+    min-height: 200px;
+  }
+}/*# sourceMappingURL=Seven.css.map */

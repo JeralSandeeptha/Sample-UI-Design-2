@@ -1,0 +1,117 @@
+@import '../Common/common.scss';
+
+.six{
+    width: 100%;
+    min-height: 75vh;
+
+    .six-inner{
+        min-height: 75vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 50px 30px;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+                color: $black;
+                font-family: $montserrat;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            h5{
+                color: $black;
+                font-family: $roboto;
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 30px;
+            }
+        }
+
+        .right{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+
+            .innerLeft{
+                background-image: url('../../images/bb81c6ca818cb748b29401af69d10e79.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .innerRight{
+                background-image: url('../../images/b8f0686a0243299f4cf7188805b8486b.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .six{
+    
+        .six-inner{
+            grid-template-columns:  1fr;
+    
+            .left{
+    
+                h2{
+                  
+                }
+    
+                h5{
+                }
+            }
+    
+            .right{
+    
+                .innerLeft{
+                  height: 300px;
+                }
+    
+                .innerRight{
+              height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .six{
+    
+        .six-inner{
+    
+            .left{
+    
+                h2{
+                  font-size: 30px;
+                }
+    
+                h5{
+                    font-size: 15px;
+                }
+            }
+    
+            .right{
+    
+                .innerLeft{
+                    height: 200px;
+                }
+    
+                .innerRight{
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

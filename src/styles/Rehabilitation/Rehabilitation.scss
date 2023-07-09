@@ -1,0 +1,45 @@
+@import '../Common/common.scss';
+
+.rehabilitation{
+    width: 100%;
+    background-image: url('../../images/bc91f7cc1f3829a3d6213dbf07ea7e87.jpeg');
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .rehabilitation-inner{
+        min-height: 50vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 30px;
+
+        .card{
+            background-color: $white;
+            height: 100%;
+            max-width: 500px;
+
+            h2{
+                font-family: montserrat;
+                color: $black;
+                font-size: 35px;
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .rehabilitation{
+
+        .rehabilitation-inner{
+    
+            .card{
+    
+                h2{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

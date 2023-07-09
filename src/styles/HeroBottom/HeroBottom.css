@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.heroBottom {
+  background-color: #EEF4FB;
+  width: 100%;
+  min-height: 75vh;
+}
+.heroBottom .heroBottom-inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 75vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+.heroBottom .heroBottom-inner .up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px 30px 0 30px;
+}
+.heroBottom .heroBottom-inner .up .left {
+  background-image: url("../../images/49855146b7a994ccaa748904063a8c66.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heroBottom .heroBottom-inner .up .right {
+  background-image: url("../../images/ca86e55b8d68227620a8508a3ee468cd.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heroBottom .heroBottom-inner .down {
+  padding: 60px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.heroBottom .heroBottom-inner .down h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.heroBottom .heroBottom-inner .down h5 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 900px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBottom .heroBottom-inner .up {
+    grid-template-columns: 1fr;
+  }
+  .heroBottom .heroBottom-inner .down {
+    padding: 50px 40px;
+  }
+  .heroBottom .heroBottom-inner .down h2 {
+    font-size: 30px;
+  }
+  .heroBottom .heroBottom-inner .down h5 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heroBottom .heroBottom-inner .down h5 {
+    text-align: justify;
+  }
+}/*# sourceMappingURL=HeroBottom.css.map */
